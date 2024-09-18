@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <!-- Contenedor para el contenido principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Mensaje de Bienvenida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 🌷Bienvenidos a nuestro Restaurante de Comida Mexicana"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#99727F"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Primera Imagen de Bienvenida -->
+        <ImageView
+            android:id="@+id/welcome_image"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tacos"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Imagen de Bienvenida"/>
+
+        <!-- Segunda Imagen -->
+        <ImageView
+            android:id="@+id/second_welcome_image"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/n"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Imagen de comida"/>
+
+        <!-- Slogan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Sabor y tradición a tu alcance!"
+            android:textSize="18sp"
+            android:textColor="#99727F"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+
+    <!-- Contenedor para el BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#8BC34A"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemIconSize="35dp"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750684516673",
+    "project_id": "restaurant-540de",
+    "storage_bucket": "restaurant-540de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750684516673:android:4617018919599f9b4b71c0",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.comida_mex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAquI-_y3udFsv5NucB3pNOoOh4VNl3Gpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
